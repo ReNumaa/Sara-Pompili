@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Mondi — Giochi in legno dipinti a mano</title>
+  <meta name="description" content="Mini Mondi: giochi in legno unici, educativi e dipinti a mano. Piccoli mondi da vivere e inventare per crescere giocando.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#" class="navbar__logo">
+        <span class="logo-mini">Mini</span> <span class="logo-mondi">Mondi</span>
+      </a>
+      <button class="navbar__toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#pronta-consegna">Pronta Consegna</a></li>
+        <li><a href="#personalizzazione">Personalizza</a></li>
+        <li><a href="#chi-sono">Chi Sono</a></li>
+        <li><a href="#missione">La Missione</a></li>
+        <li><a href="#recensioni">Recensioni</a></li>
+        <li><a href="#contatti" class="btn btn--nav">Contattami</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <header class="hero" id="hero">
+    <div class="hero__texture"></div>
+    <div class="container">
+      <div class="hero__grid">
+        <div class="hero__content">
+          <p class="hero__label">Unici &middot; Educativi &middot; Dipinti a mano</p>
+          <h1 class="hero__title">Giochi in legno<br>dipinti a mano per<br><em>crescere giocando</em></h1>
+          <p class="hero__subtitle">Piccoli mondi da vivere e inventare. Ogni pezzo è unico, creato con amore e pensato per stimolare la fantasia dei più piccoli.</p>
+          <div class="hero__cta">
+            <a href="#shop" class="btn btn--primary">Scopri i Mini Mondi</a>
+            <a href="#chi-sono" class="btn btn--outline">La mia storia</a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__image-placeholder">
+            <div class="placeholder-scene">
+              <span class="placeholder-icon">🌲🏠🧸</span>
+              <p>Immagine hero:<br><em>Un piccolo mondo in legno ambientato</em></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scorri per esplorare</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </header>
+
+  <!-- ==================== VALORI DEL BRAND ==================== -->
+  <section class="values">
+    <div class="container">
+      <div class="values__grid">
+        <div class="value-card">
+          <div class="value-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 4C18 4 14 8 14 14C14 20 24 30 24 30S34 20 34 14C34 8 30 4 24 4Z" stroke="currentColor" stroke-width="2" fill="none"/>
+              <path d="M20 14C20 11.8 21.8 10 24 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="value-card__title">Fatto a mano</h3>
+          <p class="value-card__text">Ogni giocattolo nasce dalle mie mani, con cura e attenzione ai dettagli. Artigianato italiano autentico.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 36L24 12L40 36H8Z" stroke="currentColor" stroke-width="2" fill="none"/>
+              <circle cx="24" cy="28" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
+            </svg>
+          </div>
+          <h3 class="value-card__title">Legno naturale</h3>
+          <p class="value-card__text">Materiali sicuri e sostenibili. Legno vero, colori atossici e tanta natura.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="14" width="32" height="24" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
+              <path d="M16 14V10C16 7.8 17.8 6 20 6H28C30.2 6 32 7.8 32 10V14" stroke="currentColor" stroke-width="2"/>
+              <path d="M14 24H34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="value-card__title">Educativi</h3>
+          <p class="value-card__text">Giochi pensati per stimolare la creatività, il gioco simbolico e l'apprendimento naturale.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 8L28 18H38L30 24L33 34L24 28L15 34L18 24L10 18H20L24 8Z" stroke="currentColor" stroke-width="2" fill="none"/>
+            </svg>
+          </div>
+          <h3 class="value-card__title">Pezzi unici</h3>
+          <p class="value-card__text">Ogni creazione è un pezzo originale e irripetibile, pensato per diventare un piccolo tesoro.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== INVITO AL GIOCO ==================== -->
+  <section class="invito">
+    <div class="container">
+      <div class="invito__inner">
+        <div class="invito__image-placeholder">
+          <div class="placeholder-scene placeholder-scene--warm">
+            <span class="placeholder-icon">🎭✨</span>
+            <p>Foto: scena di gioco<br><em>Mini mondo con peg dolls</em></p>
+          </div>
+        </div>
+        <div class="invito__text">
+          <span class="section-label">Il gioco come scoperta</span>
+          <h2 class="section-title">Avete mai pensato di far diventare <em>concreti</em> i personaggi dei libri preferiti dei vostri bambini?</h2>
+          <p>I piccoli personaggi in legno sono perfetti per il <strong>gioco simbolico</strong>: giochi piccoli e maneggevoli, ideali da portare ovunque — al ristorante, in viaggio, ovunque la fantasia chiama.</p>
+          <div class="invito__callout">
+            <h3>Che cos'è l'invito al gioco?</h3>
+            <p>È una traccia che viene lasciata al bambino per "invitarlo" a compiere un'azione: il gioco. Serve a favorire la <strong>libera sperimentazione</strong>. Il bambino utilizza conoscenze già acquisite per creare scenari e soluzioni differenti, nuovi e creativi. Si sviluppa così il <strong>gioco autonomo</strong>, la capacità di concentrarsi e trovare risorse proprie. Attraverso il gioco il bambino apprende nozioni in modo semplice e naturale.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SHOP ==================== -->
+  <section class="shop" id="shop">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Lo Shop</span>
+        <h2 class="section-title">Esplora i Mini Mondi</h2>
+        <p class="section-subtitle">Ogni categoria è un piccolo universo da scoprire. Scegli il tuo mondo e contattami su WhatsApp per ordinare.</p>
+      </div>
+
+      <!-- Categoria 1 -->
+      <div class="category" id="cat-imparare">
+        <div class="category__header">
+          <span class="category__number">01</span>
+          <div>
+            <h3 class="category__title">Imparare Giocando</h3>
+            <p class="category__desc">Numeri, meteo e giorni della settimana — il sapere diventa un gioco da toccare</p>
+          </div>
+        </div>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-card__image">
+              <div class="placeholder-scene placeholder-scene--product">
+                <span class="placeholder-icon">🔢</span>
+                <p>Foto prodotto</p>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <h4 class="product-card__name">Set Numeri in Legno</h4>
+              <p class="product-card__description">Numeri dipinti a mano su tondini di legno naturale. Perfetti per imparare a contare giocando.</p>
+              <a href="https://wa.me/39XXXXXXXXXX?text=Ciao!%20Vorrei%20info%20sul%20Set%20Numeri%20in%20Legno" class="btn btn--whatsapp" target="_blank" rel="noopener">
+                <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.625-1.472A11.929 11.929 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-2.168 0-4.19-.6-5.927-1.638l-.425-.253-2.744.874.864-2.68-.273-.44A9.77 9.77 0 012.182 12c0-5.423 4.395-9.818 9.818-9.818S21.818 6.577 21.818 12s-4.395 9.818-9.818 9.818z"/></svg>
+                Ordina su WhatsApp
+              </a>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__image">
+              <div class="placeholder-scene placeholder-scene--product">
+                <span class="placeholder-icon">🌤️</span>
+                <p>Foto prodotto</p>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <h4 class="product-card__name">Ruota del Meteo</h4>
+              <p class="product-card__description">Sole, pioggia, nuvole e neve: ogni giorno il bambino scopre il tempo che fa, giocando.</p>
+              <a href="https://wa.me/39XXXXXXXXXX?text=Ciao!%20Vorrei%20info%20sulla%20Ruota%20del%20Meteo" class="btn btn--whatsapp" target="_blank" rel="noopener">
+                <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.625-1.472A11.929 11.929 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-2.168 0-4.19-.6-5.927-1.638l-.425-.253-2.744.874.864-2.68-.273-.44A9.77 9.77 0 012.182 12c0-5.423 4.395-9.818 9.818-9.818S21.818 6.577 21.818 12s-4.395 9.818-9.818 9.818z"/></svg>
+                Ordina su WhatsApp
+              </a>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__image">
+              <div class="placeholder-scene placeholder-scene--product">
+                <span class="placeholder-icon">📅</span>
+                <p>Foto prodotto</p>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <h4 class="product-card__name">Giorni della Settimana</h4>
+              <p class="product-card__description">Sette piccoli tondini disposti come un percorso: ogni giorno è una tappa dell'avventura.</p>
+              <a href="https://wa.me/39XXXXXXXXXX?text=Ciao!%20Vorrei%20info%20sui%20Giorni%20della%20Settimana" class="btn btn--whatsapp" target="_blank" rel="noopener">
+                <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.625-1.472A11.929 11.929 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-2.168 0-4.19-.6-5.927-1.638l-.425-.253-2.744.874.864-2.68-.273-.44A9.77 9.77 0 012.182 12c0-5.423 4.395-9.818 9.818-9.818S21.818 6.577 21.818 12s-4.395 9.818-9.818 9.818z"/></svg>
+                Ordina su WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categoria 2 -->
+      <div class="category" id="cat-tematico">
+        <div class="category__header">
+          <span class="category__number">02</span>
+          <div>
+            <h3 class="category__title">Tavolo Tematico</h3>
+            <p class="category__desc">Scopri i mini mondi a tema: stagioni, festività, personaggi delle fiabe e classici senza tempo</p>
+          </div>
+        </div>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-card__image">
+              <div class="placeholder-scene placeholder-scene--product">
+                <span class="placeholder-icon">🍂</span>
+                <p>Foto prodotto</p>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <h4 class="product-card__name">Mini Mondo — Autunno</h4>
+              <p class="product-card__description">Foglie dorate, funghi e scoiattoli: un angolo di bosco autunnale da creare sul tavolo.</p>
+              <a href="https://wa.me/39XXXXXXXXXX?text=Ciao!%20Vorrei%20info%20sul%20Mini%20Mondo%20Autunno" class="btn btn--whatsapp" target="_blank" rel="noopener">
+                <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.625-1.472A11.929 11.929 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-2.168 0-4.19-.6-5.927-1.638l-.425-.253-2.744.874.864-2.68-.273-.44A9.77 9.77 0 012.182 12c0-5.423 4.395-9.818 9.818-9.818S21.818 6.577 21.818 12s-4.395 9.818-9.818 9.818z"/></svg>
+                Ordina su WhatsApp
+              </a>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__image">
+              <div class="placeholder-scene placeholder-scene--product">
+                <span class="placeholder-icon">🐺</span>
+                <p>Foto prodotto</p>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <h4 class="product-card__name">Mini Mondo — Cappuccetto Rosso</h4>
+              <p class="product-card__description">La fiaba prende vita: Cappuccetto, il lupo, la nonna, gli alberelli e la casetta nel bosco.</p>
+              <a href="https://wa.me/39XXXXXXXXXX?text=Ciao!%20Vorrei%20info%20sul%20Mini%20Mondo%20Cappuccetto%20Rosso" class="btn btn--whatsapp" target="_blank" rel="noopener">
+                <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.625-1.472A11.929 11.929 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-2.168 0-4.19-.6-5.927-1.638l-.425-.253-2.744.874.864-2.68-.273-.44A9.77 9.77 0 012.182 12c0-5.423 4.395-9.818 9.818-9.818S21.818 6.577 21.818 12s-4.395 9.818-9.818 9.818z"/></svg>
+                Ordina su WhatsApp
+              </a>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__image">
+              <div class="placeholder-scene placeholder-scene--product">
+                <span class="placeholder-icon">🎄</span>
+                <p>Foto prodotto</p>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <h4 class="product-card__name">Mini Mondo — Natale</h4>
+              <p class="product-card__description">La magia del Natale in miniatura: presepe, albero, regali e piccoli personaggi delle feste.</p>
+              <a href="https://wa.me/39XXXXXXXXXX?text=Ciao!%20Vorrei%20info%20sul%20Mini%20Mondo%20Natale" class="btn btn--whatsapp" target="_blank" rel="noopener">
+                <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.625-1.472A11.929 11.929 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-2.168 0-4.19-.6-5.927-1.638l-.425-.253-2.744.874.864-2.68-.273-.44A9.77 9.77 0 012.182 12c0-5.423 4.395-9.818 9.818-9.818S21.818 6.577 21.818 12s-4.395 9.818-9.818 9.818z"/></svg>
+                Ordina su WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categoria 3 -->
+      <div class="category" id="cat-pegdolls">
+        <div class="category__header">
+          <span class="category__number">03</span>
+          <div>
+            <h3 class="category__title">Peg Dolls Personalizzate</h3>
+            <p class="category__desc">Crea la tua famiglia — ogni bambola è dipinta a mano per assomigliare a chi ami</p>
+          </div>
+        </div>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-card__image">
+              <div class="placeholder-scene placeholder-scene--product">
+                <span class="placeholder-icon">👨‍👩‍👧‍👦</span>
+                <p>Foto prodotto</p>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <h4 class="product-card__name">Famiglia Personalizzata</h4>
+              <p class="product-card__description">Mamma, papà, bimbi e anche gli animali domestici! Dimmi chi siete e creerò la vostra famiglia in miniatura.</p>
+              <a href="https://wa.me/39XXXXXXXXXX?text=Ciao!%20Vorrei%20info%20sulla%20Famiglia%20Personalizzata" class="btn btn--whatsapp" target="_blank" rel="noopener">
+                <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.625-1.472A11.929 11.929 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-2.168 0-4.19-.6-5.927-1.638l-.425-.253-2.744.874.864-2.68-.273-.44A9.77 9.77 0 012.182 12c0-5.423 4.395-9.818 9.818-9.818S21.818 6.577 21.818 12s-4.395 9.818-9.818 9.818z"/></svg>
+                Ordina su WhatsApp
+              </a>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__image">
+              <div class="placeholder-scene placeholder-scene--product">
+                <span class="placeholder-icon">👧</span>
+                <p>Foto prodotto</p>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <h4 class="product-card__name">Peg Doll Singola</h4>
+              <p class="product-card__description">Un piccolo ritratto in legno: scegli i colori, i dettagli e crea il tuo personaggio unico.</p>
+              <a href="https://wa.me/39XXXXXXXXXX?text=Ciao!%20Vorrei%20info%20sulla%20Peg%20Doll%20Singola" class="btn btn--whatsapp" target="_blank" rel="noopener">
+                <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.625-1.472A11.929 11.929 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-2.168 0-4.19-.6-5.927-1.638l-.425-.253-2.744.874.864-2.68-.273-.44A9.77 9.77 0 012.182 12c0-5.423 4.395-9.818 9.818-9.818S21.818 6.577 21.818 12s-4.395 9.818-9.818 9.818z"/></svg>
+                Ordina su WhatsApp
+              </a>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__image">
+              <div class="placeholder-scene placeholder-scene--product">
+                <span class="placeholder-icon">🐕</span>
+                <p>Foto prodotto</p>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <h4 class="product-card__name">Animali Domestici</h4>
+              <p class="product-card__description">Anche i piccoli amici a quattro zampe meritano il loro ritratto in legno dipinto a mano.</p>
+              <a href="https://wa.me/39XXXXXXXXXX?text=Ciao!%20Vorrei%20info%20sugli%20Animali%20Domestici" class="btn btn--whatsapp" target="_blank" rel="noopener">
+                <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.625-1.472A11.929 11.929 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-2.168 0-4.19-.6-5.927-1.638l-.425-.253-2.744.874.864-2.68-.273-.44A9.77 9.77 0 012.182 12c0-5.423 4.395-9.818 9.818-9.818S21.818 6.577 21.818 12s-4.395 9.818-9.818 9.818z"/></svg>
+                Ordina su WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PRONTA CONSEGNA ==================== -->
+  <section class="pronta-consegna" id="pronta-consegna">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Disponibili subito</span>
+        <h2 class="section-title">Pronta Consegna</h2>
+        <p class="section-subtitle">Questi mini mondi sono pronti per partire. Nessuna attesa: scegli, ordina e ricevi a casa tua.</p>
+      </div>
+      <div class="pronta-grid">
+        <div class="pronta-card">
+          <div class="pronta-card__badge">Disponibile</div>
+          <div class="pronta-card__image">
+            <div class="placeholder-scene placeholder-scene--product">
+              <span class="placeholder-icon">🌸</span>
+              <p>Foto prodotto</p>
+            </div>
+          </div>
+          <div class="pronta-card__info">
+            <h4>Mini Mondo Primavera</h4>
+            <p>Fiori, farfalle e colori pastello. Pronto per essere spedito.</p>
+            <a href="https://wa.me/39XXXXXXXXXX?text=Ciao!%20Vorrei%20acquistare%20il%20Mini%20Mondo%20Primavera%20(pronta%20consegna)" class="btn btn--whatsapp btn--small" target="_blank" rel="noopener">
+              <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.625-1.472A11.929 11.929 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-2.168 0-4.19-.6-5.927-1.638l-.425-.253-2.744.874.864-2.68-.273-.44A9.77 9.77 0 012.182 12c0-5.423 4.395-9.818 9.818-9.818S21.818 6.577 21.818 12s-4.395 9.818-9.818 9.818z"/></svg>
+              Acquista ora
+            </a>
+          </div>
+        </div>
+        <div class="pronta-card">
+          <div class="pronta-card__badge">Disponibile</div>
+          <div class="pronta-card__image">
+            <div class="placeholder-scene placeholder-scene--product">
+              <span class="placeholder-icon">🧚</span>
+              <p>Foto prodotto</p>
+            </div>
+          </div>
+          <div class="pronta-card__info">
+            <h4>Set Fate del Bosco</h4>
+            <p>Tre fatine e il loro mondo incantato. Pronto da spedire.</p>
+            <a href="https://wa.me/39XXXXXXXXXX?text=Ciao!%20Vorrei%20acquistare%20il%20Set%20Fate%20del%20Bosco%20(pronta%20consegna)" class="btn btn--whatsapp btn--small" target="_blank" rel="noopener">
+              <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.625-1.472A11.929 11.929 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-2.168 0-4.19-.6-5.927-1.638l-.425-.253-2.744.874.864-2.68-.273-.44A9.77 9.77 0 012.182 12c0-5.423 4.395-9.818 9.818-9.818S21.818 6.577 21.818 12s-4.395 9.818-9.818 9.818z"/></svg>
+              Acquista ora
+            </a>
+          </div>
+        </div>
+        <div class="pronta-card">
+          <div class="pronta-card__badge">Disponibile</div>
+          <div class="pronta-card__image">
+            <div class="placeholder-scene placeholder-scene--product">
+              <span class="placeholder-icon">🔤</span>
+              <p>Foto prodotto</p>
+            </div>
+          </div>
+          <div class="pronta-card__info">
+            <h4>Set Lettere Nome</h4>
+            <p>Le lettere del nome del tuo bambino, colorate e pronte da appendere.</p>
+            <a href="https://wa.me/39XXXXXXXXXX?text=Ciao!%20Vorrei%20acquistare%20il%20Set%20Lettere%20Nome%20(pronta%20consegna)" class="btn btn--whatsapp btn--small" target="_blank" rel="noopener">
+              <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.625-1.472A11.929 11.929 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-2.168 0-4.19-.6-5.927-1.638l-.425-.253-2.744.874.864-2.68-.273-.44A9.77 9.77 0 012.182 12c0-5.423 4.395-9.818 9.818-9.818S21.818 6.577 21.818 12s-4.395 9.818-9.818 9.818z"/></svg>
+              Acquista ora
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PERSONALIZZAZIONE ==================== -->
+  <section class="personalizzazione" id="personalizzazione">
+    <div class="container">
+      <div class="personalizzazione__inner">
+        <div class="personalizzazione__text">
+          <span class="section-label">Su misura per te</span>
+          <h2 class="section-title">Personalizza il tuo Mini Mondo</h2>
+          <p>Ogni creazione può essere resa ancora più speciale con <strong>colori personalizzati</strong> e <strong>iniziali</strong> incise o dipinte a mano.</p>
+          <div class="personalizzazione__options">
+            <div class="option-card">
+              <div class="option-card__icon">
+                <svg viewBox="0 0 32 32" fill="none"><circle cx="10" cy="16" r="6" fill="#E6C5C0"/><circle cx="22" cy="16" r="6" fill="#7A9E7E"/><circle cx="16" cy="10" r="6" fill="#C8A27A" opacity="0.8"/></svg>
+              </div>
+              <h4>Scegli i colori</h4>
+              <p>Dimmi i tuoi colori preferiti e li integrerò nel design del tuo giocattolo.</p>
+            </div>
+            <div class="option-card">
+              <div class="option-card__icon">
+                <svg viewBox="0 0 32 32" fill="none"><text x="8" y="24" font-family="Playfair Display, serif" font-size="22" fill="#7A9E7E" font-style="italic">Ab</text></svg>
+              </div>
+              <h4>Aggiungi le iniziali</h4>
+              <p>Le iniziali del tuo bambino, dipinte a mano per un regalo davvero unico.</p>
+            </div>
+          </div>
+          <a href="https://wa.me/39XXXXXXXXXX?text=Ciao!%20Vorrei%20personalizzare%20un%20prodotto" class="btn btn--primary" target="_blank" rel="noopener">Richiedi una personalizzazione</a>
+        </div>
+        <div class="personalizzazione__image">
+          <div class="placeholder-scene placeholder-scene--tall">
+            <span class="placeholder-icon">🎨</span>
+            <p>Foto: dettaglio personalizzazione<br><em>Pennellate, iniziali, colori</em></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CHI SONO ==================== -->
+  <section class="chi-sono" id="chi-sono">
+    <div class="container">
+      <div class="chi-sono__inner">
+        <div class="chi-sono__image">
+          <div class="placeholder-scene placeholder-scene--portrait">
+            <span class="placeholder-icon">👩‍🎨</span>
+            <p>Foto di Sara<br><em>mentre dipinge o nel suo laboratorio</em></p>
+          </div>
+        </div>
+        <div class="chi-sono__text">
+          <span class="section-label">Chi sono</span>
+          <h2 class="section-title">Eccomi! Mi presento.</h2>
+          <p class="chi-sono__intro">Sono <strong>Sara</strong>, una mamma creativa con la passione per il legno, i colori e le storie da raccontare.</p>
+          <p>Tutto è nato dal desiderio di creare qualcosa di speciale per i miei bambini: giocattoli che fossero belli, unici e capaci di stimolare la fantasia. Così, pennellata dopo pennellata, sono nati i <strong>Mini Mondi</strong>.</p>
+          <p>Ogni pezzo che creo è dipinto a mano con colori atossici su legno naturale. Non esistono due pezzi uguali, perché ogni mini mondo è pensato per essere un piccolo tesoro da custodire.</p>
+          <p>Credo che i giocattoli più belli siano quelli semplici, quelli che lasciano spazio alla creatività del bambino e che, magari, possono anche insegnare qualcosa.</p>
+          <div class="chi-sono__signature">
+            <span>Con amore,</span>
+            <strong>Sara</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== MISSIONE ==================== -->
+  <section class="missione" id="missione">
+    <div class="container">
+      <div class="missione__inner">
+        <div class="missione__text">
+          <span class="section-label">La mia missione</span>
+          <h2 class="section-title">Creare giocattoli che raccontano storie</h2>
+          <p class="missione__lead">Ogni Mini Mondo nasce da una storia. Quella di Cappuccetto Rosso che cammina nel bosco, quella delle stagioni che cambiano, quella di una famiglia che cresce.</p>
+          <div class="missione__pillars">
+            <div class="pillar">
+              <h4>Gioco Simbolico</h4>
+              <p>I piccoli personaggi in legno invitano i bambini a creare le proprie storie, sviluppando immaginazione e linguaggio.</p>
+            </div>
+            <div class="pillar">
+              <h4>Apprendimento Naturale</h4>
+              <p>Numeri, giorni, stagioni: concetti che diventano concreti e tangibili attraverso il gioco.</p>
+            </div>
+            <div class="pillar">
+              <h4>Gioco Autonomo</h4>
+              <p>Giocattoli che stimolano la concentrazione e la capacità di trovare risorse proprie, senza bisogno di schermi.</p>
+            </div>
+          </div>
+        </div>
+        <div class="missione__quote">
+          <blockquote>
+            <p>"Attraverso il gioco il bambino apprende nozioni in modo semplice e naturale."</p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== RECENSIONI ==================== -->
+  <section class="recensioni" id="recensioni">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Cosa dicono di noi</span>
+        <h2 class="section-title">Le voci dei Mini Mondi</h2>
+      </div>
+      <div class="recensioni__grid">
+        <div class="recensione-card">
+          <div class="recensione-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="recensione-card__text">"Le peg dolls della nostra famiglia sono stupende! I miei bimbi non le lasciano mai. Sara ha catturato ogni dettaglio con una cura incredibile."</p>
+          <div class="recensione-card__author">
+            <strong>Giulia M.</strong>
+            <span>Mamma di due bambini</span>
+          </div>
+        </div>
+        <div class="recensione-card">
+          <div class="recensione-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="recensione-card__text">"Il set di Cappuccetto Rosso è magico. Mia figlia lo usa per raccontare la storia ogni sera prima di dormire. Un regalo che vale tantissimo."</p>
+          <div class="recensione-card__author">
+            <strong>Francesca L.</strong>
+            <span>Mamma di una bambina</span>
+          </div>
+        </div>
+        <div class="recensione-card">
+          <div class="recensione-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="recensione-card__text">"Qualità artigianale vera. Si vede che ogni pezzo è fatto con amore. Li portiamo sempre con noi quando viaggiamo: sono perfetti!"</p>
+          <div class="recensione-card__author">
+            <strong>Marco e Alessia</strong>
+            <span>Genitori di tre bambini</span>
+          </div>
+        </div>
+        <div class="recensione-card">
+          <div class="recensione-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="recensione-card__text">"Ho regalato i giorni della settimana a mio nipote. Ora ogni mattina è un rituale: sceglie il giorno giusto e lo mette sul percorso. Bellissimo!"</p>
+          <div class="recensione-card__author">
+            <strong>Elena R.</strong>
+            <span>Zia orgogliosa</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA FINALE ==================== -->
+  <section class="cta-finale" id="contatti">
+    <div class="container">
+      <div class="cta-finale__inner">
+        <span class="section-label section-label--light">Iniziamo insieme</span>
+        <h2 class="cta-finale__title">Pronta a creare il tuo Mini Mondo?</h2>
+        <p>Scrivimi su WhatsApp per ordinare, personalizzare o semplicemente per raccontarmi la tua idea. Ogni Mini Mondo parte da una conversazione.</p>
+        <a href="https://wa.me/39XXXXXXXXXX?text=Ciao%20Sara!%20Vorrei%20saperne%20di%20più%20sui%20Mini%20Mondi" class="btn btn--whatsapp btn--large" target="_blank" rel="noopener">
+          <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.625-1.472A11.929 11.929 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-2.168 0-4.19-.6-5.927-1.638l-.425-.253-2.744.874.864-2.68-.273-.44A9.77 9.77 0 012.182 12c0-5.423 4.395-9.818 9.818-9.818S21.818 6.577 21.818 12s-4.395 9.818-9.818 9.818z"/></svg>
+          Scrivimi su WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="#" class="navbar__logo">
+            <span class="logo-mini">Mini</span> <span class="logo-mondi">Mondi</span>
+          </a>
+          <p>Giochi in legno da vivere e inventare.<br>Unici &middot; Educativi &middot; Dipinti a mano</p>
+        </div>
+        <div class="footer__links">
+          <h4>Esplora</h4>
+          <ul>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#pronta-consegna">Pronta Consegna</a></li>
+            <li><a href="#personalizzazione">Personalizza</a></li>
+            <li><a href="#chi-sono">Chi Sono</a></li>
+            <li><a href="#recensioni">Recensioni</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>Contatti</h4>
+          <ul>
+            <li><a href="https://wa.me/39XXXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="https://www.instagram.com/minimondi" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="mailto:info@minimondi.it">Email</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Mini Mondi di Sara. Tutti i diritti riservati. &middot; Fatto a mano in Italia con amore.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp floating button -->
+  <a href="https://wa.me/39XXXXXXXXXX?text=Ciao%20Sara!" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contattami su WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.625-1.472A11.929 11.929 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-2.168 0-4.19-.6-5.927-1.638l-.425-.253-2.744.874.864-2.68-.273-.44A9.77 9.77 0 012.182 12c0-5.423 4.395-9.818 9.818-9.818S21.818 6.577 21.818 12s-4.395 9.818-9.818 9.818z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
