@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- Albero stilizzato — Mini Mondi -->
+  <!-- Chioma a 3 livelli -->
+  <ellipse cx="60" cy="32" rx="28" ry="22" fill="#7A9E7E"/>
+  <ellipse cx="60" cy="50" rx="34" ry="20" fill="#6B8E6F"/>
+  <ellipse cx="60" cy="66" rx="38" ry="18" fill="#5F7D6B"/>
+  <!-- Tronco -->
+  <rect x="54" y="78" width="12" height="22" rx="3" fill="#C8A27A"/>
+  <!-- Base terreno -->
+  <ellipse cx="60" cy="102" rx="22" ry="5" fill="#E5E0D8"/>
+  <!-- Piccola casetta accanto -->
+  <rect x="82" y="82" width="14" height="14" rx="1" fill="#E6C5C0"/>
+  <polygon points="82,82 89,74 96,82" fill="#C8A27A"/>
+  <rect x="87" y="88" width="4" height="8" rx="0.5" fill="#C8A27A"/>
+  <!-- Piccola peg doll a sinistra -->
+  <circle cx="30" cy="88" r="5" fill="#F5F1EB" stroke="#C8A27A" stroke-width="1.5"/>
+  <rect x="26" y="93" width="8" height="10" rx="4" fill="#E6C5C0"/>
+</svg>

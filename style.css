@@ -211,8 +211,13 @@ ul { list-style: none; }
 .navbar__logo {
   text-decoration: none;
   display: flex;
-  gap: 0.3rem;
-  align-items: baseline;
+  gap: 0.5rem;
+  align-items: center;
+}
+.navbar__logo-img {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
 }
 .logo-mini {
   font-family: var(--font-serif);
