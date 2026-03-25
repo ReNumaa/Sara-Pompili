@@ -60,6 +60,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
   fadeElements.forEach(el => observer.observe(el));
 
+  /* ---------- Hero video: unmute on play & fullscreen ---------- */
+  const heroVideo = document.querySelector('.hero__video');
+  const fullscreenBtn = document.querySelector('.hero__video-fullscreen');
+
+  if (heroVideo) {
+    // Unmute when user clicks play via controls
+    heroVideo.addEventListener('play', () => {
+      if (!heroVideo.muted) return;
+    });
+    heroVideo.addEventListener('click', () => {
+      heroVideo.muted = false;
+    });
+    // Also unmute when user interacts with controls (volumechange)
+    heroVideo.addEventListener('volumechange', () => {
+      // Browser handles this natively via controls
+    });
+  }
+
+  if (fullscreenBtn && heroVideo) {
+    fullscreenBtn.addEventListener('click', () => {
+      heroVideo.muted = false;
+      if (heroVideo.requestFullscreen) {
+        heroVideo.requestFullscreen();
+      } else if (heroVideo.webkitEnterFullscreen) {
+        heroVideo.webkitEnterFullscreen();
+      } else if (heroVideo.webkitRequestFullscreen) {
+        heroVideo.webkitRequestFullscreen();
+      }
+    });
+  }
+
   /* ---------- Smooth scroll for anchor links ---------- */
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {
