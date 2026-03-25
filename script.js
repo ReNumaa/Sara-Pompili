@@ -10,8 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (toggle && links) {
     toggle.addEventListener('click', () => {
-      links.classList.toggle('open');
+      const isOpen = links.classList.toggle('open');
       toggle.classList.toggle('active');
+      document.body.style.overflow = isOpen ? 'hidden' : '';
     });
 
     // Close menu when clicking a link
@@ -19,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
       link.addEventListener('click', () => {
         links.classList.remove('open');
         toggle.classList.remove('active');
+        document.body.style.overflow = '';
       });
     });
   }

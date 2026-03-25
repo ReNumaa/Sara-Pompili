@@ -1000,27 +1000,42 @@ ul { list-style: none; }
   }
 
   /* Navbar mobile */
-  .navbar__toggle { display: flex; }
+  .navbar__toggle {
+    display: flex;
+    z-index: 1002;
+  }
 
   .navbar__links {
     position: fixed;
-    top: 70px;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 1001;
     background: var(--panna);
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 2rem;
-    gap: 1.25rem;
+    gap: 1.5rem;
     transform: translateX(100%);
-    transition: transform var(--transition);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     overflow-y: auto;
   }
   .navbar__links.open {
     transform: translateX(0);
   }
+  .navbar__links li {
+    width: 100%;
+    text-align: center;
+  }
   .navbar__links a {
-    font-size: 1.05rem;
+    font-size: 1.2rem;
+    display: block;
+    padding: 0.5rem 0;
+  }
+  .navbar__links a:not(.btn)::after {
+    display: none;
   }
 
   /* Hero mobile — stack vertically */
