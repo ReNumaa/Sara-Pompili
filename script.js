@@ -4,21 +4,21 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ---------- Mobile nav toggle ---------- */
+  /* ---------- Mobile menu toggle ---------- */
   const toggle = document.getElementById('navToggle');
-  const links  = document.getElementById('navLinks');
+  const mobileMenu = document.getElementById('mobileMenu');
 
-  if (toggle && links) {
+  if (toggle && mobileMenu) {
     toggle.addEventListener('click', () => {
-      const isOpen = links.classList.toggle('open');
+      const isOpen = mobileMenu.classList.toggle('open');
       toggle.classList.toggle('active');
       document.body.style.overflow = isOpen ? 'hidden' : '';
     });
 
     // Close menu when clicking a link
-    links.querySelectorAll('a').forEach(link => {
+    mobileMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
-        links.classList.remove('open');
+        mobileMenu.classList.remove('open');
         toggle.classList.remove('active');
         document.body.style.overflow = '';
       });
@@ -27,16 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------- Navbar scroll effect ---------- */
   const navbar = document.getElementById('navbar');
-  let lastScroll = 0;
 
   window.addEventListener('scroll', () => {
-    const currentScroll = window.scrollY;
-    if (currentScroll > 50) {
+    if (window.scrollY > 50) {
       navbar.classList.add('scrolled');
     } else {
       navbar.classList.remove('scrolled');
     }
-    lastScroll = currentScroll;
   }, { passive: true });
 
   /* ---------- Fade in on scroll ---------- */
@@ -66,7 +63,9 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---------- Smooth scroll for anchor links ---------- */
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {
-      const target = document.querySelector(anchor.getAttribute('href'));
+      const href = anchor.getAttribute('href');
+      if (href === '#') return;
+      const target = document.querySelector(href);
       if (target) {
         e.preventDefault();
         const navHeight = navbar.offsetHeight;
@@ -75,20 +74,5 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-
-  /* ---------- Hamburger animation ---------- */
-  const style = document.createElement('style');
-  style.textContent = `
-    .navbar__toggle.active span:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px);
-    }
-    .navbar__toggle.active span:nth-child(2) {
-      opacity: 0;
-    }
-    .navbar__toggle.active span:nth-child(3) {
-      transform: rotate(-45deg) translate(5px, -5px);
-    }
-  `;
-  document.head.appendChild(style);
 
 });

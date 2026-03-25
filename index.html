@@ -18,10 +18,7 @@
       <a href="#" class="navbar__logo">
         <span class="logo-mini">Mini</span> <span class="logo-mondi">Mondi</span>
       </a>
-      <button class="navbar__toggle" id="navToggle" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="navbar__links" id="navLinks">
+      <ul class="navbar__links navbar__links--desktop">
         <li><a href="#shop">Shop</a></li>
         <li><a href="#pronta-consegna">Pronta Consegna</a></li>
         <li><a href="#personalizzazione">Personalizza</a></li>
@@ -30,8 +27,24 @@
         <li><a href="#recensioni">Recensioni</a></li>
         <li><a href="#contatti" class="btn btn--nav">Contattami</a></li>
       </ul>
+      <button class="navbar__toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
+
+  <!-- Mobile menu overlay (fuori dalla navbar) -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu__inner">
+      <a href="#shop" class="mobile-menu__link">Shop</a>
+      <a href="#pronta-consegna" class="mobile-menu__link">Pronta Consegna</a>
+      <a href="#personalizzazione" class="mobile-menu__link">Personalizza</a>
+      <a href="#chi-sono" class="mobile-menu__link">Chi Sono</a>
+      <a href="#missione" class="mobile-menu__link">La Missione</a>
+      <a href="#recensioni" class="mobile-menu__link">Recensioni</a>
+      <a href="#contatti" class="mobile-menu__link mobile-menu__cta">Contattami</a>
+    </div>
+  </div>
 
   <!-- ==================== HERO ==================== -->
   <header class="hero" id="hero">
