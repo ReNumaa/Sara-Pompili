@@ -17,7 +17,14 @@
   --divider:      #E5E0D8;
   --bianco:       #FFFFFF;
 
+  /* Extra accents */
+  --rosa:         #D4878F;
+  --rosa-scuro:   #B76E76;
+  --beige-caldo:  #E8D5C4;
+  --marrone-legno:#8B6A4F;
+
   /* Typography */
+  --font-brush:   'Caveat Brush', cursive;
   --font-serif:   'Playfair Display', Georgia, 'Times New Roman', serif;
   --font-sans:    'Montserrat', 'Segoe UI', Helvetica, Arial, sans-serif;
 
@@ -88,7 +95,7 @@ ul { list-style: none; }
   font-weight: 600;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--verde);
+  color: var(--rosa);
   margin-bottom: 0.75rem;
 }
 .section-label--light { color: var(--panna); }
@@ -103,7 +110,7 @@ ul { list-style: none; }
 }
 .section-title em {
   font-style: italic;
-  color: var(--verde);
+  color: var(--rosa);
 }
 
 .section-subtitle {
@@ -220,17 +227,16 @@ ul { list-style: none; }
   flex-shrink: 0;
 }
 .logo-mini {
-  font-family: var(--font-serif);
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--testo);
+  font-family: var(--font-brush);
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: var(--rosa);
 }
 .logo-mondi {
-  font-family: var(--font-serif);
-  font-size: 1.5rem;
+  font-family: var(--font-brush);
+  font-size: 1.75rem;
   font-weight: 400;
-  font-style: italic;
-  color: var(--verde);
+  color: var(--rosa-scuro);
 }
 
 /* Desktop nav links */
@@ -591,7 +597,7 @@ ul { list-style: none; }
 /* ---------- INVITO AL GIOCO ---------- */
 .invito {
   padding: var(--section-py) 0;
-  background: var(--beige);
+  background: var(--beige-caldo);
 }
 
 .invito__inner {
@@ -622,7 +628,7 @@ ul { list-style: none; }
 
 .invito__callout {
   background: var(--panna);
-  border-left: 4px solid var(--verde);
+  border-left: 4px solid var(--marrone-legno);
   padding: 1.75rem;
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   margin-top: 1.5rem;
@@ -631,7 +637,7 @@ ul { list-style: none; }
   font-family: var(--font-serif);
   font-size: 1.1rem;
   margin-bottom: 0.75rem;
-  color: var(--verde-scuro);
+  color: var(--marrone-legno);
 }
 .invito__callout p {
   font-size: 0.9rem;
@@ -751,7 +757,7 @@ ul { list-style: none; }
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background: var(--verde);
+  background: var(--rosa);
   color: var(--bianco);
   font-size: 0.7rem;
   font-weight: 600;
@@ -870,9 +876,9 @@ ul { list-style: none; }
   font-size: 0.9rem;
 }
 .chi-sono__signature strong {
-  font-family: var(--font-serif);
-  font-size: 1.5rem;
-  color: var(--verde);
+  font-family: var(--font-brush);
+  font-size: 1.75rem;
+  color: var(--rosa);
 }
 
 /* ---------- MISSIONE ---------- */
@@ -902,15 +908,15 @@ ul { list-style: none; }
 
 .pillar {
   padding: 1.5rem;
-  background: var(--beige);
+  background: var(--beige-caldo);
   border-radius: var(--radius-sm);
-  border-left: 3px solid var(--verde);
+  border-left: 3px solid var(--marrone-legno);
 }
 .pillar h4 {
   font-family: var(--font-serif);
   font-size: 1.05rem;
   margin-bottom: 0.4rem;
-  color: var(--verde-scuro);
+  color: var(--marrone-legno);
 }
 .pillar p {
   font-size: 0.88rem;
@@ -919,7 +925,7 @@ ul { list-style: none; }
 }
 
 .missione__quote blockquote {
-  background: var(--verde);
+  background: var(--rosa);
   color: var(--bianco);
   padding: 3rem 2.5rem;
   border-radius: var(--radius);
@@ -997,7 +1003,7 @@ ul { list-style: none; }
 /* ---------- CTA FINALE ---------- */
 .cta-finale {
   padding: var(--section-py) 0;
-  background: var(--verde);
+  background: var(--marrone-legno);
 }
 
 .cta-finale__inner {
@@ -1054,8 +1060,8 @@ ul { list-style: none; }
 .footer__brand .navbar__logo {
   margin-bottom: 1rem;
 }
-.footer__brand .logo-mini { color: var(--bianco); }
-.footer__brand .logo-mondi { color: var(--verde); }
+.footer__brand .logo-mini { color: var(--cipria); }
+.footer__brand .logo-mondi { color: var(--rosa); }
 .footer__brand p {
   font-size: 0.85rem;
   line-height: 1.6;
