@@ -818,42 +818,61 @@ ul { list-style: none; }
   box-shadow: 0 2px 16px rgba(0,0,0,0.04);
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   border: 1px solid var(--divider);
+  display: flex;
+  flex-direction: column;
 }
 .product-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 48px rgba(0,0,0,0.08);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.08);
   border-color: var(--cipria);
 }
 
 .product-card__image {
   overflow: hidden;
   position: relative;
+  aspect-ratio: 4/3;
+}
+.product-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.product-card:hover .product-card__image img {
+  transform: scale(1.04);
 }
 .product-card__image .placeholder-scene {
   border: none;
   border-radius: 0;
-  transition: transform 0.5s ease;
-}
-.product-card:hover .product-card__image .placeholder-scene {
-  transform: scale(1.03);
+  min-height: 100%;
+  height: 100%;
 }
 
 .product-card__info {
-  padding: 1.75rem;
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .product-card__name {
   font-family: var(--font-serif);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
 .product-card__description {
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   color: var(--testo-light);
-  line-height: 1.65;
-  margin-bottom: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.category__cta {
+  text-align: center;
+  margin-top: 2rem;
 }
 
 /* ---------- PRONTA CONSEGNA ---------- */
@@ -887,11 +906,24 @@ ul { list-style: none; }
   position: relative;
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   border: 1px solid var(--divider);
+  display: flex;
+  flex-direction: column;
 }
 .pronta-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 48px rgba(0,0,0,0.08);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.08);
   border-color: var(--cipria);
+}
+
+.pronta-card__image {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+.pronta-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .pronta-card__badge {
@@ -938,6 +970,143 @@ ul { list-style: none; }
   color: var(--testo-light);
   margin-bottom: 1rem;
   line-height: 1.6;
+}
+
+/* ---------- PACKAGING ---------- */
+.packaging {
+  padding: calc(var(--section-py) * 1.2) 0;
+  background: var(--panna);
+  position: relative;
+  overflow: hidden;
+}
+.packaging__bg-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45%;
+  height: 100%;
+  background: var(--beige-caldo);
+  border-radius: 0 80px 80px 0;
+  z-index: 0;
+}
+
+.packaging__inner {
+  display: grid;
+  grid-template-columns: 5fr 6fr;
+  gap: 5rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.packaging__image-col {
+  position: relative;
+}
+
+.packaging__frame {
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 28px 72px rgba(139, 106, 79, 0.18);
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border: 4px solid var(--bianco);
+}
+.packaging__frame:hover {
+  transform: scale(1.02) rotate(-1deg);
+}
+.packaging__frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.packaging__ribbon {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  background: var(--rosa);
+  color: var(--bianco);
+  font-family: var(--font-brush);
+  font-size: 1.1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  box-shadow: 0 8px 20px rgba(212, 135, 143, 0.3);
+  transform: rotate(-2deg);
+  z-index: 2;
+}
+
+.packaging__text-col {}
+
+.packaging__lead {
+  font-size: 1.15rem !important;
+  color: var(--testo) !important;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.packaging__features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.packaging__feature {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  padding: 1.5rem;
+  background: var(--bianco);
+  border-radius: 20px;
+  border: 1px solid var(--divider);
+  transition: all 0.4s ease;
+}
+.packaging__feature:hover {
+  transform: translateX(6px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.05);
+  border-color: var(--cipria);
+}
+
+.packaging__feature-icon {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(230, 197, 192, 0.3), rgba(212, 135, 143, 0.15));
+  border-radius: 14px;
+  color: var(--rosa);
+  padding: 10px;
+}
+.packaging__feature-icon svg { width: 100%; height: 100%; }
+
+.packaging__feature h4 {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.packaging__feature p {
+  font-size: 0.88rem;
+  color: var(--testo-light);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .packaging__inner { gap: 3rem; }
+  .packaging__bg-accent { width: 40%; border-radius: 0 60px 60px 0; }
+}
+@media (max-width: 768px) {
+  .packaging__inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .packaging__bg-accent {
+    width: 100%;
+    height: 50%;
+    border-radius: 0 0 40px 40px;
+  }
 }
 
 /* ---------- PERSONALIZZAZIONE ---------- */
